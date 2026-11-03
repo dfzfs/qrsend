@@ -1,0 +1,65 @@
+/* Heart button in the input bar */
+.cns-heart {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    opacity: 0.65;
+    transition: color 0.15s, opacity 0.15s, transform 0.1s;
+}
+.cns-heart:hover { opacity: 1; transform: scale(1.1); }
+.cns-heart.cns-active { color: #ff5d8f; opacity: 1; }
+
+/* Mini popup */
+.cns-popup {
+    position: fixed;
+    z-index: 30000;
+    width: min(310px, calc(100vw - 16px));
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid var(--SmartThemeBorderColor, #555);
+    background: var(--SmartThemeBlurTintColor, #1e1e24);
+    color: var(--SmartThemeBodyColor, #ddd);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+    font-size: 13px;
+    overflow-y: auto;
+}
+.cns-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.cns-close { cursor: pointer; opacity: 0.7; padding: 2px 6px; }
+.cns-close:hover { opacity: 1; }
+
+.cns-status {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(255, 93, 143, 0.12);
+    border: 1px solid rgba(255, 93, 143, 0.35);
+}
+.cns-status-title { font-size: 11px; opacity: 0.75; margin-bottom: 4px; }
+.cns-status-line { line-height: 1.5; word-break: break-all; }
+.cns-macro { opacity: 0.7; font-family: monospace; }
+
+.cns-section { margin-bottom: 10px; }
+.cns-label { font-size: 12px; margin-bottom: 4px; opacity: 0.9; }
+.cns-label .cns-macro { margin-right: 4px; }
+.cns-line { display: flex; gap: 4px; margin-bottom: 4px; align-items: center; }
+.cns-line > .cns-input,
+.cns-line > .cns-select { flex: 1 1 auto; min-width: 0; margin: 0; }
+.cns-btn {
+    flex: 0 0 auto;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--SmartThemeBorderColor, #555);
+    opacity: 0.85;
+    user-select: none;
+}
+.cns-btn:hover { opacity: 1; background: rgba(255, 255, 255, 0.08); }
+.cns-foot { display: flex; justify-content: flex-end; }
+.cns-empty { opacity: 0.7; padding: 6px 0; }

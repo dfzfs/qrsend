@@ -1,0 +1,13 @@
+{
+    "display_name": "Chat Name Swap (user/char 이름 임시 변경)",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "dependencies": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "me",
+    "version": "1.0.0",
+    "homePage": "",
+    "auto_update": false
+}
